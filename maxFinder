@@ -1,0 +1,21 @@
+public class maxFinder {
+    public static void main(String[] args){
+        int max1 = getMax(5, 7);
+
+        int max2 = getMax(12, 7);
+
+        int trueMax = getMax(max1, max2);
+
+        System.out.println(trueMax);
+    }
+
+    public static void getMax(int n1, int n2){
+        int max;
+        if (n1 > n2)
+            max = n1;
+        else
+            max = n2;
+        return max;
+
+    }
+}
