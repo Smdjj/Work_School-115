@@ -1,0 +1,35 @@
+
+import java.util.Scanner;
+
+public class Progress {
+    
+    public static void main(String[] args){
+
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Enter the level value:");
+
+        int level = in.nextInt();
+
+        switch(level){
+            case 1 :
+                System.out.println("You finished level 1");
+
+            case 2 :
+                System.out.println("Keep going");
+               
+            case 3:
+                System.out.println("You are more than half way");
+                break;
+            case 4:
+                System.out.println("One level left");
+                break;
+            case 5:
+                System.out.println("Congrats you finished the game");
+                break;
+
+                default:
+                    System.out.println("Keep practicing to finish a level");
+        }
+    }
+}
